@@ -1,0 +1,41 @@
+{
+    "conversations": [
+        {
+            "id": 1,
+            "contactId": 1,
+            "contactName": "John Doe",
+            "messages": [
+                { "text": "Hi", "sender": "John Doe" },
+                { "text": "Hello", "sender": "You" },
+                { "text": "How are you?", "sender": "John Doe" }
+            ]
+        },
+        {
+            "id": 2,
+            "contactId": 2,
+            "contactName": "Jane Smith",
+            "messages": [
+                { "text": "Hey there", "sender": "You" },
+                { "text": "Good to see you", "sender": "Jane Smith" }
+            ]
+        }
+    ],
+    "contacts": [
+        {
+            "id": 1,
+            "name": "John Doe"
+        },
+        {
+            "id": 2,
+            "name": "Jane Smith"
+        },
+        {
+            "id": 3,
+            "name": "Alice Johnson"
+        },
+        {
+            "id": 4,
+            "name": "Bob Williams"
+        }
+    ]
+}

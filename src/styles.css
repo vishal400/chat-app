@@ -1,0 +1,64 @@
+.app {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .left-sidebar {
+    width: 250px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .conversations-list {
+    padding: 10px;
+  }
+  
+  .create-conversation-btn {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .conversation-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .conversation-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .right-side-view {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .conversation-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .alerts {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
