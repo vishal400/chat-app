@@ -239,3 +239,207 @@ body {
 .message-container::-webkit-scrollbar-thumb:hover {
   background-color: #999;
 }
+
+
+/* App.css */
+
+/* Your existing styles... */
+
+/* Add new styles for improved appearance and responsiveness */
+
+/* Contact List */
+.contact-list {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+}
+
+.contact-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.contact-item h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.contact-item:hover {
+  background-color: #e0e0e0;
+}
+
+/* Conversation List */
+.conversation-list {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  overflow-y: auto;
+}
+
+.search-input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.conversation-item {
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-decoration: none;
+  color: #333;
+}
+
+.conversation-item h3 {
+  margin: 0;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.conversation-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #777;
+}
+
+.conversation-item:hover {
+  background-color: #e0e0e0;
+}
+
+.create-conversation {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.create-conversation a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* Conversation UI */
+.conversation {
+  flex: 2;
+  padding: 20px;
+  background-color: #fff;
+  overflow-y: auto;
+}
+
+.message-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.message-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.send-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.send-button:hover {
+  background-color: #0056b3;
+}
+
+/* Update App.css */
+
+/* Add styles for profile pictures */
+.user-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.user-profile img {
+  width: 30px; /* Adjust the size of the profile picture */
+  height: 30px; /* Adjust the size of the profile picture */
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-profile h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Add this CSS to style the scrollbar */
+.conversation-list-scroll {
+  max-height: calc(100vh - 250px); /* Adjust the max-height as needed */
+  overflow-y: auto;
+}
+
+.conversation-list-scroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+.conversation-list-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.conversation-list-scroll::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+.conversation-list-scroll::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* CSS for beautiful scrollbar, shown only when scrolling */
+
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* For Edge and IE */
+* {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}

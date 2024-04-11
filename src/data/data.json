@@ -1,41 +1,91 @@
 {
-    "conversations": [
-        {
-            "id": 1,
-            "contactId": 1,
-            "contactName": "John Doe",
-            "messages": [
-                { "text": "Hi", "sender": "John Doe" },
-                { "text": "Hello", "sender": "You" },
-                { "text": "How are you?", "sender": "John Doe" }
-            ]
-        },
-        {
-            "id": 2,
-            "contactId": 2,
-            "contactName": "Jane Smith",
-            "messages": [
-                { "text": "Hey there", "sender": "You" },
-                { "text": "Good to see you", "sender": "Jane Smith" }
-            ]
-        }
-    ],
-    "contacts": [
-        {
-            "id": 1,
-            "name": "John Doe"
-        },
-        {
-            "id": 2,
-            "name": "Jane Smith"
-        },
-        {
-            "id": 3,
-            "name": "Alice Johnson"
-        },
-        {
-            "id": 4,
-            "name": "Bob Williams"
-        }
-    ]
+  "conversations": [
+    {
+      "id": 1,
+      "contactId": 1,
+      "contactName": "John Doe",
+      "messages": [
+        { "text": "Hi", "sender": "John Doe" },
+        { "text": "Hello", "sender": "You" },
+        { "text": "How are you?", "sender": "John Doe" }
+      ]
+    },
+    {
+      "id": 2,
+      "contactId": 2,
+      "contactName": "Jane Smith",
+      "messages": [
+        { "text": "Hey there", "sender": "You" },
+        { "text": "Good to see you", "sender": "Jane Smith" }
+      ]
+    },
+    {
+      "id": 3,
+      "contactId": 3,
+      "contactName": "Alice Johnson",
+      "messages": [
+        { "text": "Hi Alice", "sender": "You" },
+        { "text": "Hello", "sender": "Alice Johnson" },
+        { "text": "How are you doing?", "sender": "You" }
+      ]
+    },
+    {
+      "id": 4,
+      "contactId": 4,
+      "contactName": "Bob Williams",
+      "messages": []
+    }
+  ],
+  "contacts": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "profilePic": "https://randomuser.me/api/portraits/men/1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "profilePic": "https://randomuser.me/api/portraits/women/2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Alice Johnson",
+      "profilePic": "https://randomuser.me/api/portraits/women/3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Bob Williams",
+      "profilePic": "https://randomuser.me/api/portraits/men/4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Charlie Brown",
+      "profilePic": "https://randomuser.me/api/portraits/men/5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "David Lee",
+      "profilePic": "https://randomuser.me/api/portraits/men/6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Emma Davis",
+      "profilePic": "https://randomuser.me/api/portraits/women/7.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Frank Miller",
+      "profilePic": "https://randomuser.me/api/portraits/men/8.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Grace Wilson",
+      "profilePic": "https://randomuser.me/api/portraits/women/9.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Henry Clark",
+      "profilePic": "https://randomuser.me/api/portraits/men/10.jpg"
+    }
+  ]
 }

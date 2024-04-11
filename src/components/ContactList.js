@@ -20,7 +20,10 @@ function ContactList() {
       <h1>Contacts</h1>
       {contacts.map(contact => (
         <div key={contact.id} className="contact-item" onClick={() => startConversation(contact.id)}>
-          <h3>{contact.name}</h3>
+          <div className="user-profile">
+            <img src={contact.profilePic} alt="Profile" />
+            <h3>{contact.name}</h3>
+          </div>
         </div>
       ))}
     </div>
