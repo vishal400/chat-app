@@ -4,10 +4,14 @@ import { Link } from 'react-router-dom';
 import '../App.css';
 
 function ConversationList() {
+  // get conversations
   const conversations = useSelector(state => state.chat.conversations);
+  // get contacts
   const contacts = useSelector(state => state.chat.contacts);
+  // state for search query
   const [searchQuery, setSearchQuery] = useState('');
 
+  // get filtered conversations
   const filteredConversations = conversations.filter(conversation =>
     conversation.contactName.toLowerCase().includes(searchQuery.toLowerCase())
   );
@@ -24,7 +28,7 @@ function ConversationList() {
         onChange={(e) => setSearchQuery(e.target.value)}
         className="search-input"
       />
-      <div className="conversation-list-scroll">
+      <div className="conversation-list-list">
         {filteredConversations.map(conversation => {
           const contact = contacts.find(contact => contact.id === conversation.contactId);
           return (
@@ -57,7 +61,7 @@ function getLastMessage(conversation) {
 
 // Function to truncate messages to one line
 function truncateMessage(message) {
-  const maxLength = 30; // Maximum length for one-liner message
+  const maxLength = 20; // Maximum length for one-liner message
   if (message.length > maxLength) {
     return message.substring(0, maxLength) + '...'; // Truncate longer messages
   }

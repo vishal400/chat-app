@@ -65,10 +65,11 @@ body {
 }
 
 .conversation-list {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   border-right: 1px solid #ddd;
-  overflow-y: auto;
+  overflow: hidden;
 }
 
 .conversation-list h1 {
@@ -116,6 +117,11 @@ body {
   color: #007bff;
 }
 
+.conversation-list-list {
+  flex: 1;
+  overflow-y: auto;
+}
+
 .contact-list {
   flex: 1;
   padding: 20px;
@@ -159,15 +165,14 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding-right: 20px; /* Add padding to create space for scrollbar */
+  padding-right: 20px;
   overflow-y: auto;
-  /* Hide scrollbar when not scrolling */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
 }
 
 .message-container::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, and Opera */
+  display: none; 
 }
 
 .message {
@@ -200,7 +205,7 @@ body {
 .input-container {
   display: flex;
   align-items: center;
-  padding: 20px; /* Add padding to create space */
+  padding: 20px; 
 }
 
 .message-input {
@@ -219,33 +224,12 @@ body {
   color: #fff;
   cursor: pointer;
   font-size: 16px;
-  margin-left: 10px; /* Add spacing between input box and button */
+  margin-left: 10px; 
 }
 
 .send-button:hover {
   background-color: #0056b3;
 }
-
-/* Custom scrollbar */
-.message-container::-webkit-scrollbar {
-  width: 10px;
-}
-
-.message-container::-webkit-scrollbar-thumb {
-  background-color: #ccc;
-  border-radius: 5px;
-}
-
-.message-container::-webkit-scrollbar-thumb:hover {
-  background-color: #999;
-}
-
-
-/* App.css */
-
-/* Your existing styles... */
-
-/* Add new styles for improved appearance and responsiveness */
 
 /* Contact List */
 .contact-list {
@@ -359,8 +343,6 @@ body {
   background-color: #0056b3;
 }
 
-/* Update App.css */
-
 /* Add styles for profile pictures */
 .user-profile {
   display: flex;
@@ -369,8 +351,8 @@ body {
 }
 
 .user-profile img {
-  width: 30px; /* Adjust the size of the profile picture */
-  height: 30px; /* Adjust the size of the profile picture */
+  width: 30px; 
+  height: 30px; 
   border-radius: 50%;
   margin-right: 10px;
 }
@@ -381,65 +363,26 @@ body {
   color: #333;
 }
 
-/* Add this CSS to style the scrollbar */
-.conversation-list-scroll {
-  max-height: calc(100vh - 250px); /* Adjust the max-height as needed */
-  overflow-y: auto;
-}
+/* style the scrollbar */
 
-.conversation-list-scroll::-webkit-scrollbar {
-  width: 10px;
-}
-
-.conversation-list-scroll::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-.conversation-list-scroll::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 5px;
-}
-
-.conversation-list-scroll::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-/* CSS for beautiful scrollbar, shown only when scrolling */
-
-/* For WebKit browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-/* For Firefox */
 * {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+  scrollbar-width: auto;
 }
 
-*::-webkit-scrollbar {
-  width: 8px;
-}
-
+/* Define scrollbar thumb */
 *::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
 }
 
-*::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-/* For Edge and IE */
 * {
-  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -ms-overflow-style: none;
+}
+
+*::-ms-scrollbar-thumb {
+  display: none;
 }

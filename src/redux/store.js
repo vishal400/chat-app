@@ -1,7 +1,7 @@
 // store.js
 import { configureStore } from '@reduxjs/toolkit';
 import chatReducer from './slice';
-import data from '../data/data.json'; // Import your JSON data
+import data from '../data/data.json'; // Import JSON data
 
 const initialState = {
   chat: {
